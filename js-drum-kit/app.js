@@ -20,13 +20,21 @@ const addClass = (event) => {
   }
 };
 
-const removeClass = (event) => {
-  if (allValidKeys.includes(event.key)) {
-    setTimeout(function(){ keySelected(event.key).remove("played") }, 250);
-  }
-};
+// const removeClass = (event) => {
+//   if (allValidKeys.includes(event.key)) {
+//     setTimeout(function(){ keySelected(event.key).remove("played") }, 250);
+//   }
+// };
+// document.addEventListener("keyup", removeClass);
 
 document.addEventListener("keydown", addClass);
 
-document.addEventListener("keyup", removeClass);
+const removeTransition = (event) => {
+  if (event.propertyName !== "transform") return;
+  event.srcElement.classList.remove("played")
+};
 
+const keys = document.querySelectorAll(".key");
+keys.forEach((key) => {
+  key.addEventListener("transitionend", removeTransition)
+});

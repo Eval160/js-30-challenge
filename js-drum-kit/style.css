@@ -39,7 +39,7 @@
 .played {
   background-color: rgba(255, 255, 255, 0.6);
   transform: scale(2);
-  transition-duration: 230ms;
+  transition-duration: 200ms;
   box-shadow:
   0 2.8px 2.2px rgba(246, 204, 197, 0.034),
   0 6.7px 5.3px rgba(246, 204, 197, 0.048),
