@@ -50,7 +50,7 @@
   border: 3px solid rgba(53, 36, 43, 1);
 
 }
-.key:hover {
+/*.key:hover {
   background-color: rgba(255, 255, 255, 0.6);
   transform: scale(2);
   transition-duration: 230ms;
@@ -63,4 +63,4 @@
   0 100px 80px rgba(246, 204, 197, 0.12);
   border: 3px solid rgba(53, 36, 43, 1);
 
-}
+}*/
